@@ -54,7 +54,7 @@
 
     <!-- HERO
     =========================================================== -->
-    <section id="hero">
+    <section id="hero" data-type="background" data-speed="5">
         <article>
             <div class="container clearfix">
                 <div class="row">
@@ -87,28 +87,115 @@
 
     <!-- OPT IN SECTION
     =========================================================== -->
-    <section>
+    <section id="option">
+       <div class="container">
+           <div class="row">
+               <div class="col-sm-8">
+                   <p class="lead">
+                      <strong>Want to become a WordPress developer?</strong> Subscribe and you'll get the first 8 lectures of the course for free + a 55% discount!
+                   </p>
+               </div>
+               <div class="col-sm-4">
+                   <buttom class="btn btn-success btn-lg btn-block" data-toggle="modal" data-target="#myModal">
+                       Click me to Subscribe
+                   </buttom>
+               </div>
+           </div>
+       </div>
 
     </section>
     <!-- BOOST YOUR INCOME
     =========================================================== -->
-    <section>
-
+    <section id="boost-income">
+        <div class="container">
+            <div class="section-header">
+                <img src="assets/img/icon-boost.png" alt="Cheart">
+                <h2>How You Can Boost Your Income</h2>
+            </div>
+            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est nostrum veritatis voluptatum veniam vel numquam eligendi placeat nam modi consequatur excepturi culpa, quidem, provident cum laborum, eveniet sequi ipsa cupiditate!</p>
+            <div class="row">
+                <div class="col-sm-6">
+                    <h3>Make money on the side</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero, sequi suscipit numquam fuga, corporis tempore id nemo quasi labore, unde vitae enim. Eos doloremque quasi, rerum reiciendis eum modi id.</p>
+                </div>
+                <div class="col-sm-6">
+                    <h3>Create a full-time Job</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi inventore, sapiente corrupti accusamus nesciunt a fuga dicta possimus numquam hic doloremque, error earum eaque ut sunt quis totam. Velit, natus!</p>
+                </div>
+            </div>
+        </div>
     </section>
     <!-- WHO BENEFITS
     =========================================================== -->
-    <section>
+    <section id="who-benefits">
+        <div class="container">
+            <div class="section-header">
+                <img src="assets/img/icon-pad.png" alt="pad and pencil">
+                <h2>Whow should take this course?</h2>
+            </div>
+            <div class="row">
+                <div class="col-sm-8 col-sm-offset-2">
+                    <h3>Graphics &amp; Web Designers</h3>
+                    <p>Graphic designers are extremely talented, but ask them to code their designs and they’ll freeze up! This leaves them with no other choice but to hire a web developer. Any professional graphic designers knows web developers can be expensive.</p>
+                    <p>If you’re a designer, learning to code your own WordPress websites can change your business entirely! Now, not only are you a great designer, but you’re a skillful developer, too! This puts you in a position to <strong>make an extra $1,000 – $5,000 per project.</strong></p>
+                    <h3>Entrepreneurs</h3>
+                    <p>Entrepreneurs have big dreams, and in many cases, shoestring budgets. In order to survive in the cut-throat world of the Startup company, it’s a necessity to have a world-class website. However, world-class websites come with a large price tag.</p>
+                    <p>If you can learn how to build a high-quality startup website by yourself, then you’ve just saved yourself a lot of cash, <strong>tens of thousands of dollars in many cases.</strong></p>
+                    <h3>Code Hobbyists</h3>
+                    <p>It’s fun to learn challenging new skills. Code hobbyists can add dynamic websites to their arsenal of tools to play with — you can even <strong>sell WordPress themes and plugins for cash! The possibilities are truly endless.</strong></p>
+                    <h3>People Looking for a New Career</h3>
+                    <p>Are you out of work? Looking for a more rewarding job? Desire a career that can allow you to work almost anywhere in the world? Becoming a Web Developer might be the answer for you.</p>
+                    <p><strong>Web developers are paid well, </strong>anywhere from $33,000 to more than $105,000 per year. They get to work at amazing companies that are changing the world, or they enjoy the ability to start their own companies, become location-independent and work from home, from coffee shops, in an airplane, on the beach, or wherever they want!</p>
+
+
+                </div>
+            </div>
+        </div>
 
     </section>
     <!-- COURSE FEATURES
     =========================================================== -->
-    <section>
+    <section id="course-features">
+        <div class="container">
+            <div class="section-header">
+                <img src="assets/img/icon-rocket.png" alt="Rockets">
+                <h2>Course Features</h2>
+            </div>
+            <div class="row">
+                <div class="col-sm-2">
+                    <i class="ci ci-computer"></i>
+                    <h4>Lifetime access to 80+ leatures </h4>
+                </div>
+                <div class="col-sm-2">
+                    <i class="ci ci-watch"></i>
+                    <h4>10+ hours of HD video content</h4>
+                </div>
+                <div class="col-sm-2">
+                    <i class="ci ci-calender"></i>
+                    <h4>30-day money back guarantee</h4>
+                </div>
+                <div class="col-sm-2">
+                    <i class="ci ci-community"></i>
+                    <h4>Access to a community of like-minded students</h4>
+                </div>
+                <div class="col-sm-2">
+                    <i class="ci ci-instructor"></i>
+                    <h4>Direct access to the instructor</h4>
+                </div>
+                <div class="col-sm-2">
+                    <i class="ci ci-device"></i>
+                    <h4>Accessible content on your mobile devices</h4>
+                </div>
+            </div>
+        </div>
 
     </section>
     <!-- PROJECT FEATURES
     =========================================================== -->
-    <section>
+    <section id="project-features">
+        <div class="container">
 
+        </div>
     </section>
     <!-- VIDEO FEATURES
     =========================================================== -->
@@ -138,8 +225,31 @@
 
     <!-- MODAL
     =========================================================== -->
-    <div>
-
+    <div class="modal fade" id="myModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                    <h4 class="modal-title" id="myModalLabel"><i class="fa fa-envelope"></i> Subscribe our Mailing List</h4>
+                </div>
+                <div class="modal-body">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis consequuntur nostrum architecto fuga aut. Nostrum rerum harum libero, blanditiis ipsam ad. Ipsa exercitationem perspiciatis, <em>hic repudiandae non mollitia voluptatum laudantium.</em></p>
+                    <form class="form-inline" role="form">
+                        <div class="form-group">
+                            <label for="subscribe-name" class="sr-only"></label>
+                            <input type="email" class="form-control" id="subscribe-name" placeholder="Your first name">
+                        </div>
+                        <div class="form-group">
+                            <label for="subscribe-email" class="sr-only"></label>
+                            <input type="text" class="form-control" id="subscribe-email" placeholder="Your email">
+                        </div>
+                        <input type="sumbit" class="btn btn-danger" value="Subscribe">
+                    </form>
+                    <hr>
+                    <p><small>Lorem ipsum dolor sit amet, consectetur adipisicing elit. &amp;Tempore eum sed, voluptates magnam, fuga nesciunt nostrum, unde, cupiditate facere culpa commodi quibusdam possimus. <br>Dicta sequi, molestias praesentium ratione nostrum nobis.</small></p>
+                </div>
+            </div>
+        </div>
     </div>
 
     <!-- BOOTSTRAP CODE JS
