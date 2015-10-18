@@ -51,6 +51,22 @@ button, input ,.btn , a.btn{
 img {
     max-width: 100%;
 }
+
+.modal-content {
+    background: url('/assets/img/tile.jpg') top left repeat;
+}
+
+.badge.social{
+    background: #ccc;
+    font-size: 24px;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 20px;
+
+}
+
 /* === Hero === */
 #hero {
     background: url('../img/hero-bg.jpg') 50% 0 repeat fixed;
@@ -167,3 +183,7 @@ text-align: center;
     color: white;
 }
 
+/* ==== Instructor ===== */
+#instructor {
+    background: white url('/assets/img/brad-elvis.png') 90% -10px no-repeat;
+}
