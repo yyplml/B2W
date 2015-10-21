@@ -428,4 +428,55 @@ footer li.signup-link a:hover {
     }
 }
 
+/* === Blog === */
+.post{
+    position: relative;
+    border: solid 1px #ddd;
+    background: white;
+    border-radius: 4px;
+}
 
+.post header,.post .post-excerpt {
+    padding: 20px;
+}
+.post header h1,.post header h3{
+    margin: 0 0 15px;
+    padding: 0 0 15px;
+    border-bottom: solid 1px #ddd;
+}
+.post header h1{
+    font-size: 24px;
+}
+.post-image{
+    height: auto;
+}
+.post-details{
+    font-size: 12px;
+    width: 90%;
+}
+.post-detail i.fa:first-child{
+    padding: 0;
+}
+
+/* === Comments === */
+.post-comments-badge{
+    height: 70px;
+    width: 70px;
+    position: absolute;
+    top: 25px;
+    right: 20px;
+    border: none;
+    border-radius: 100%;
+    background: #79b044;
+    text-align: center;
+    display: table;
+}
+
+.post-comments-badge a{
+    display: table-cell;
+    vertical-align: middle;
+    color: white;
+    font-size: 20px;
+    line-height: 20px;
+
+}
