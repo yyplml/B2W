@@ -44,11 +44,11 @@ h4 {
     font-size: 18px;
 }
 
-p{
+p {
     margin: 0 0 15px;
 }
 
-p.lead{
+p.lead {
     font-weight: normal;
 }
 
@@ -197,9 +197,11 @@ blockquote:before {
 
 
 /* ==== LAYOUT ===== */
-.row + .row{
+
+.row + .row {
     margin-top: 20px;
 }
+
 section {
     padding: 80px 0;
 }
@@ -214,6 +216,32 @@ section h2 {
 
 section h3 {
     margin: 30px 0 10px;
+}
+
+#primary {
+    padding: 40px 0;
+}
+
+.feature-image {
+    display: table;
+    width: 100%;
+}
+
+.feature-image-default {
+    background: url('/assets/img/stuff-feature.jpg') no-repeat;
+    background-size: cover;
+}
+
+.feature-image-default-alt {
+    background: url('/assets/img/hipster-stuff.jpg') no-repeat;
+    background-size: cover;
+}
+
+.feature-image h1 {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    color: white;
 }
 
 #option {
@@ -270,6 +298,29 @@ i.ci {
 
 .ci.ci-device {
     background-position: -200px 0;
+}
+
+
+/* ==== Forms ===== */
+
+label {
+    display: block;
+    font-weight: bold;
+}
+
+input[type='text'],
+input[type='email'],
+input[type='url'],
+input[type='password'],
+input[type='search'],
+textarea {
+    color: #666;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 6px 12px;
 }
 
 
@@ -397,69 +448,107 @@ footer li.signup-link a:hover {
     color: #dd5638;
 }
 
+
 /* === Media queries === */
-@media screen and ( max-width: 991px){
-    #instructor .container{
-        background: rgba(255,255,255,0.8);
+
+@media screen and ( max-width: 991px) {
+    #instructor .container {
+        background: rgba(255, 255, 255, 0.8);
         padding: 20px;
     }
 }
 
-@media screen and ( max-width: 768px){
-    .logo{
+@media screen and ( max-width: 768px) {
+    .logo {
         width: 50%;
     }
     #option p {
         margin: 0 0 10px;
     }
-    #featurette iframe{
+    #featurette iframe {
         height: 240px;
     }
 }
 
-@media screen and ( max-width: 568px){
-    #instructor .num{
+@media screen and ( max-width: 568px) {
+    #instructor .num {
         height: 100px;
         width: 100px;
         font-size: 22px;
     }
-    #instructor .num span{
+    #instructor .num span {
         font-size: 16px;
     }
 }
 
+
 /* === Blog === */
-.post{
+
+.post,
+.widget {
     position: relative;
     border: solid 1px #ddd;
     background: white;
     border-radius: 4px;
+    margin: 20px 0;
 }
 
-.post header,.post .post-excerpt {
+.post header,
+.post .post-excerpt,
+.post .post-body {
     padding: 20px;
 }
-.post header h1,.post header h3{
+
+.post header h1,
+.post header h3 {
     margin: 0 0 15px;
     padding: 0 0 15px;
     border-bottom: solid 1px #ddd;
 }
-.post header h1{
+
+.post header h1 {
     font-size: 24px;
 }
-.post-image{
+
+.post-image {
     height: auto;
 }
-.post-details{
+
+.post-details {
     font-size: 12px;
     width: 90%;
 }
-.post-detail i.fa:first-child{
+
+.post-detail i.fa:first-child {
     padding: 0;
 }
 
+
+/* === Widgets === */
+
+.widget {
+    padding: 20px;
+}
+
+.widget h4 {
+    margin: 0 0 10px;
+    padding: 0 0 10px;
+    border-bottom: solid 1px #ddd;
+}
+
+.widget ul li {
+    margin: 0 0 5px;
+}
+
+.widget ul li:hover {
+    position: relative;
+    left: 2px;
+}
+
+
 /* === Comments === */
-.post-comments-badge{
+
+.post-comments-badge {
     height: 70px;
     width: 70px;
     position: absolute;
@@ -472,11 +561,10 @@ footer li.signup-link a:hover {
     display: table;
 }
 
-.post-comments-badge a{
+.post-comments-badge a {
     display: table-cell;
     vertical-align: middle;
     color: white;
     font-size: 20px;
     line-height: 20px;
-
 }
